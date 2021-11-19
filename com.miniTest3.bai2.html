@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    let array = [];
+    for (let i = 0; i < number; i++) {
+        array[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + ' :');
+    }
+    let input = prompt("Nhập số cần tìm: ");
+    let count = 0;
+
+    function checkArray() {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === input) {
+                count++
+            }
+        }
+        document.write('Số lượng tìm được: ' + count + " " + typeof (input))
+    }
+
+    checkArray()
+</script>
+</body>
+</html>

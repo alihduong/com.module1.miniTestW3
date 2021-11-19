@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt('Nhập vào số lượng phần tử: ');
+    let array = new Array(number);
+    let sum = 0;
+    let flag = false
+    for (i =0; i < array.length; i++ ) {
+        array[i] = +prompt('Nhập vào phần tử thứ ' + (i + 1) + ' :');
+        if (array[i] % 3 === 0) {
+            sum += 1;
+            flag = true
+        }
+    }
+    if(flag) {
+        document.write('Số lượng số chia hết cho 3 trong mảng là ' + sum);
+    } else {
+        document.write(-1)
+    }
+</script>
+</body>
+</html>
